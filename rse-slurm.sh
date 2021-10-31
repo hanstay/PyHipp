@@ -22,4 +22,3 @@ os.chdir('sessioneye'); \
 pyh.RPLSplit(SkipLFP=False, SkipHighPass=False); \
 print(time.localtime()); \
 print(time.time()-t0);"
-
