@@ -16,7 +16,7 @@ RESET_MODE = 2
 # get number of arguments
 nargs = len(sys.argv)
 if nargs > 3:
-    print('Usage: envlist; envlist env; envlist envprefix nenvs')
+    print("Usage: envlist; envlist env; envlist envprefix nenvs")
     exit
 elif nargs > 2:
     # creates or re-creates the list of environments
@@ -44,7 +44,7 @@ with lock:
         # add code here
         clist = []
         for i in range(int(nenvs)):
-            clist.append('cenv' + str(i))
+            clist.append("cenv" + str(i))
             print(clist[-1])
     else:
         # load hickle file
@@ -56,9 +56,8 @@ with lock:
         else:
             # get and remove env from clist
             # add code here
-            env_for_removal = clist[0]
-            clist.remove(env_for_removal)
+            env = clist.pop(0)
             # return env name
-            print(env_for_removal)
+            print(env)
     # save hickle file
     hickle.dump(clist, file_path, mode="w")
