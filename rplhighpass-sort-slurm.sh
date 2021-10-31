@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --cpus-per-task=1 #number of cpus for this task
-#SBATCH -J "lfp"   # job name
+#SBATCH -J "hps"   # job name
 
 ## /SBATCH -p general # partition (queue)
 #SBATCH -o hps-slurm.%N.%j.out # STDOUT
@@ -29,5 +29,5 @@ from PyHipp import export_mountain_cells; \
 export_mountain_cells.export_mountain_cells(); \
 print(time.localtime());"
 
-conda deactivate 
+conda deactivate
 /data/src/PyHipp/envlist.py $envarg
