@@ -16,7 +16,7 @@
 
 /data/miniconda3/bin/conda init
 source ~/.bashrc
-envarg='/data/src/PyHipp/envlist.py'
+envarg=`/data/src/PyHipp/envlist.py`
 conda activate $envarg
 
 python -u -c "import PyHipp as pyh; \
@@ -30,3 +30,4 @@ print(time.localtime());"
 
 conda deactivate
 /data/src/PyHipp/envlist.py $envarg
+
