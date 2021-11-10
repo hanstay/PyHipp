@@ -14,7 +14,6 @@
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 python -u -c "import PyHipp as pyh; \
-<<<<<<< HEAD
 import DataProcessingTools as DPT; \
 import os; \
 import time; \
