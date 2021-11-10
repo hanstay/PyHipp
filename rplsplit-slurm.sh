@@ -18,7 +18,7 @@ import os; \
 import time; \
 t0 = time.time(); \
 print(time.localtime()); \
-DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[9, 31,34, 56, 72, 93, 119, 120]); \
+DPT.objects.processDirs(dirs=None, objtype=pyh.RPLSplit, channel=[9, 31,34, 56, 72, 93, 119, 120]);\
 DPT.objects.processDirs(dirs=None, objtype=pyh.RPLLFP, saveLevel=1); \
 DPT.objects.processDirs(dirs=None, objtype=pyh.RPLHighPass, saveLevel=1);\
 os.chdir('session01');\
